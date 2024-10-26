@@ -1,0 +1,7 @@
+{
+  "name": "Elite Gems Collection",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

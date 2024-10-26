@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>About Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar color="primary">
+      <ion-title size="large">About Us</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <ion-spinner *ngIf="isLoading" class="loading-spinner"></ion-spinner>
+  <div class="iframe-container full-h-w"  [class.hidden]="isLoading">
+    <iframe 
+
+      scrolling="auto"
+      src="https://www.elitegemscollection.com/about-us/" 
+      sandbox="allow-same-origin allow-scripts" 
+      class="responsive-iframe" (load)="onIframeLoad()">
+    </iframe>
+  </div>
+</ion-content>
